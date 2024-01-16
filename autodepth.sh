@@ -5,6 +5,8 @@
 #SBATCH --mem=5G
 #SBATCH --array=0-11
 
+conda init bash
+source ~/.bashrc
 FILES=(*.bam)
 
 conda activate /home/rmacleod/scratch/apps/mambaforge/envs/map-etc
