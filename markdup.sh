@@ -13,5 +13,4 @@ conda init bash
 source ~/.bashrc
 conda activate /home/rmacleod/scratch/apps/mambaforge/envs/map-etc
 
-picard MarkDuplicates OPTICAL_DUPLICATE_PIXEL_DISTANCE=12000 I=$BAM o=$out REMOVE_DUPLICATES=false METRICS_FILE=$metrics TAGGING_POLICY=All VALIDATION_STRATEG
-Y=LENIENT
+picard MarkDuplicates OPTICAL_DUPLICATE_PIXEL_DISTANCE=12000 I=$BAM o=$out REMOVE_DUPLICATES=false METRICS_FILE=$metrics TAGGING_POLICY=All VALIDATION_STRINGENCY=LENIENT
