@@ -1,8 +1,8 @@
 #!/bin/bash
 
 #SBATCH --partition=medium
-#SBATCH --cpus-per-task=2
-#SBATCH --mem=12G
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=2G
 #SBATCH --array=0-7
 
 BAM=(*.merged.bam)
