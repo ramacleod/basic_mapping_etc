@@ -9,6 +9,7 @@ RC=(*.collapsed.gz)
 R1=${RC[$SLURM_ARRAY_TASK_ID]%.collapsed.gz}.pair1.truncated.gz
 R2=${RC[$SLURM_ARRAY_TASK_ID]%.collapsed.gz}.pair2.truncated.gz
 REF=/home/rmacleod/scratch/private/shamanka2/hg38/WholeGenomeFasta/genome.fa
+##REF=/mnt/shared/scratch/rmacleod/private/shamanka2/hs37d5/hs37d5.fa ##for grch37 ref
 
 conda init bash
 source ~/.bashrc
